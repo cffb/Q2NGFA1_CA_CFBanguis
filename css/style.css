@@ -1,0 +1,52 @@
+*{
+    margin: 0;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+nav{
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 1vw;
+    padding-top: 1vw;
+    background-color: gray;
+    color: rgb(0, 0, 0);
+}
+.links a{
+    padding-left: 1vw;
+}
+@media screen and ( max-width: 600px )
+{
+    nav{
+        position: relative;
+        display: inline-block
+         }
+    .pagetitle{
+        background-color: rgb(151, 145, 145);
+        padding: 1vw;
+        color: black;
+        
+    }
+    .links{
+        display: none;
+        position: absolute;
+        min-width: 160px;
+        box-shadow: white;
+        z-index: 1;
+        background-color: rgb(160, 146, 146)
+    }
+    .links a{
+        color: white;
+        padding: 12px 16px;
+        display: block;
+    }
+    .links a:hover{background-color: darkgray;}
+    nav:hover .links{display: block;}
+    nav:hover .pagetitle{background-color: gray;}
+
+    
+}
+
+
+    
